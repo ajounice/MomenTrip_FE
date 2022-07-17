@@ -2,7 +2,6 @@ import React, {Dispatch, ReactElement, SetStateAction, useState} from "react";
 import '@/styles/components/Navigator.css';
 import { Link } from "react-router-dom";
 import { RiNotification2Line } from "react-icons/ri";
-import classNames from "classnames";
 
 interface NavProps{
     currentPage : string;
