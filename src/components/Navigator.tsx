@@ -25,11 +25,13 @@ function Navigator({currentPage , setCurrentPage} : NavProps) : ReactElement<Nav
 
     return(
             <section className={"NavSection"}>
+                <div className={"tmp"}> </div>
+
                 <div className={"NavTabContainer"}>
                     {/*팔로잉/홈/검색*/}
-                    <h2><Link onClick={onClickHandler} to={"/home"} className={currentPage} id={"idFollowing"}>팔로잉</Link></h2>
-                    <h2><Link onClick={onClickHandler} to={"/home"} className={currentPage} id={"idHome"}>홈</Link></h2>
-                    <h2><Link onClick={onClickHandler} to={"/home"} className={currentPage} id={"idSearch"}>검색</Link></h2>
+                    <h2 id={"idFollowing"} onClick={onClickHandler}><Link to={"/following"} className={currentPage}>팔로잉</Link></h2>
+                    <h2 id={"idHome"} onClick={onClickHandler}><Link to={"/home"} className={currentPage}>홈</Link></h2>
+                    <h2  id={"idSearch"} onClick={onClickHandler}><Link to={"/search"} className={currentPage}>검색</Link></h2>
 
                 </div>
                 <div className={"alarmContainer"}>

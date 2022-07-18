@@ -17,9 +17,11 @@ function App() {
     <div className="App">
       <Navigator currentPage={currentPage} setCurrentPage={setCurrentPage}/>
 
-      <Routes>
-          <Route path={"/"} element={<Main/>}>Main</Route>
-          <Route path="/home" element={<Home />}>Home</Route>
+        <Routes>
+            <Route path={"/"} element={<Main/>}>Main</Route>
+            <Route path="/home" element={<Home />}>Home</Route>
+            <Route path="/search" element={<Home />}>Search</Route>
+            <Route path="/following" element={<Home />}>Following</Route>
         </Routes>
     </div>
   );

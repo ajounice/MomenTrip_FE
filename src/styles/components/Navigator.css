@@ -5,7 +5,7 @@
     background-color: skyblue;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -33,8 +33,13 @@
     font-weight: 400;
 }
 
+.tmp{
+    padding : 3%;
+    width:1px;
+    height : 1px;
+}
+
 .alarmContainer{
-    position : absolute;
-    top : 0.8rem;
-    right : 10px;
+    box-sizing :content-box;
+    padding : 3%;
 }
