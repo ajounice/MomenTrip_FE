@@ -9,25 +9,32 @@ import { RiHeart3Line, RiHeart3Fill, RiQuestionAnswerLine, RiShareForwardLine, R
 interface VerticalSectionProps {
     isSelectComment : boolean;
     setIsSelectComment : Dispatch<SetStateAction<boolean>>;
+
+    isClickedShare : boolean;
+    setIsClickedShare : Dispatch<SetStateAction<boolean>>;
 }
 
-function ShortFormVerticalSection({isSelectComment , setIsSelectComment} : VerticalSectionProps) : ReactElement{
+function ShortFormVerticalSection({isSelectComment , setIsSelectComment, isClickedShare, setIsClickedShare} : VerticalSectionProps) : ReactElement{
 
     const [ isSelectedHeart , setIsSelectedHeart ] = useState<boolean>(false);
+
+    const onClickShare = useCallback(()=>{
+        setIsClickedShare(!isClickedShare);
+    },[isClickedShare])
+
     const onClickHeart = useCallback(()=>{
         setIsSelectedHeart(!isSelectedHeart);
     },[isSelectedHeart])
 
     const onClickComment = useCallback(()=>{
         setIsSelectComment(!isSelectComment);
-        console.log(isSelectComment);
     },[isSelectComment])
 
     return(
         <section className={"verticalSection"}>
             { isSelectedHeart ? <RiHeart3Fill onClick={onClickHeart} className={"sectionItem"}/> : <RiHeart3Line onClick={onClickHeart} className={"sectionItem"} /> }
             <RiQuestionAnswerLine onClick={onClickComment} className={"sectionItem"} />
-            <RiShareForwardLine className={"sectionItem"} />
+            <RiShareForwardLine onClick={onClickShare} className={"sectionItem"} />
             <RiListUnordered className={"sectionItem"} />
         </section>
     );

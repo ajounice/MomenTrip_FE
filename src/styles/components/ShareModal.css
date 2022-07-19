@@ -1,0 +1,38 @@
+.shareModalContainer{
+    width : 100%;
+    height : 67.36453202%;
+    border-top: 0.5px solid lightslategray;
+    position : absolute;
+    background-color: white;
+    bottom : 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.shareTitleContainer{
+    width : 100%;
+    height : 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton{
+    position : absolute;
+    right : 5px;
+    width : 1.5rem;
+    height : 1.5rem;
+}
+
+.shareTitleItem{
+    padding : 10px;
+}
+
+.shareButtonContainer{
+    width : 100%;
+    height : 100%;
+}
+

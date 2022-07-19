@@ -1,6 +1,9 @@
 .NavSection{
     width : 100%;
-    height : 5%;
+    height : 8%;
+
+    position : absolute;
+    top : 0;
 
     background-color: skyblue;
     display: flex;
