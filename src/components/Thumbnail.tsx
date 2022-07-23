@@ -2,18 +2,14 @@ import React from 'react';
 
 const Thumbnail = () => {
     return (
-        <div className='flex overflow-x-auto'>
+        <div className='flex'>
             <img
                 src='https://blog.kakaocdn.net/dn/RS1O8/btqEwRYEgAG/SI0UZck2vAg7NAy4ZybGFk/img.png'
-                className='h-[256px] w-[144px] mr-4'
+                className='w-2/5'
             />
             <img
                 src='https://blog.kakaocdn.net/dn/RS1O8/btqEwRYEgAG/SI0UZck2vAg7NAy4ZybGFk/img.png'
-                className='h-[256px] w-[144px] mr-4'
-            />
-            <img
-                src='https://blog.kakaocdn.net/dn/RS1O8/btqEwRYEgAG/SI0UZck2vAg7NAy4ZybGFk/img.png'
-                className='h-[256px] w-[144px] mr-4'
+                className='w-2/5 ml-2'
             />
         </div>
     );

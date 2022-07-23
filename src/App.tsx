@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import SearchBar from '@/components/SearchBar';
-import TagList from '@/components/TagList';
-import Thumbnail from '@/components/Thumbnail';
+import SearchBar from './components/SearchBar';
+import TagList from './components/TagList';
+import Thumbnail from './components/Thumbnail';
 // import Example from '';
 
 const dummy_data = [
@@ -42,15 +42,15 @@ function App() {
                 <div className='container mx-auto sm:px-6 lg:px-8 px-4'>
                     {/* SearchBar */}
                     <SearchBar />
-                    <p className='mt-5 mb-2 text-lg'>인기태그</p>
+                    <p className='mt-2 mb-2 text-sm'>인기태그</p>
                     <TagList itemList={dummy_data} />
 
                     {/* Today Best */}
-                    <p className='mt-5 mb-2 text-2xl'>Today Best</p>
+                    <p className='mt-3 mb-1 text-lg'>Today Best</p>
                     <Thumbnail />
 
                     {/* Week Best */}
-                    <p className='mt-5 mb-2 text-2xl'>Weekly Best</p>
+                    <p className='mt-3 mb-1 text-lg'>Weekly Best</p>
                     <Thumbnail />
                 </div>
             </header>
