@@ -44,6 +44,9 @@
 }
 
 .sendButton{
+    position : absolute;
+    right : 2%;
+
     width : 1.5rem;
     height : 1.5rem
 }
@@ -60,7 +63,7 @@
 }
 
 .commentInput{
-    width : 70%;
+    width : 90%;
     height : 50%;
 
     border : none;
