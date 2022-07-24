@@ -16,7 +16,7 @@ const Thumbnail = ({ src, href }: InterThumbnail) => {
     const [isLike, setIsLike] = useState(false);
 
     return (
-        <div className=' w-36 relative '>
+        <div className='w-36 relative'>
             <a href={href}>
                 <img src={src} className=' rounded-md ' />
             </a>
