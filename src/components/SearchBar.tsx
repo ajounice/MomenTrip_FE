@@ -3,7 +3,7 @@ import React from 'react';
 const SearchBar = () => {
     return (
         <div>
-            <div className='mt-3'>
+            <div className='mt-2'>
                 <input
                     type='text'
                     name='search'
