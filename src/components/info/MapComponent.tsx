@@ -1,20 +1,27 @@
 import React, {useEffect} from "react";
-import '../styles/components/MapComponent.css';
+import * as config from "../../config";
+import {KAKAO_API_KEY} from "../../config";
+import styled from "styled-components";
 
 interface MapProps {
     latitude: number; // 위도
     longitude: number; // 경도
 }
 
-function MapComponent({latitude,longitude}: MapProps) : React.ReactElement{
+const Map = styled.div`
+  width : 100%;
+  height : 100%;
+
+`;
+
+function MapComponent({latitude,longitude}: MapProps){
 
     useEffect(()=>{
         const mapScript = document.createElement("script");
         mapScript.async = true;
-        mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=1355d6cec4965dead62382093a1f5313&autoload=false`;
-
+        console.log("kakao key : ",`${config.KAKAO_API_KEY}`);
+        mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${config.KAKAO_API_KEY}&autoload=false`;
         document.head.appendChild(mapScript);
-
         const onLoadKakaoMap = () => {
             window.kakao.maps.load(()=>{
                 const container = document.getElementById("map");
@@ -27,21 +34,16 @@ function MapComponent({latitude,longitude}: MapProps) : React.ReactElement{
                 const marker = new window.kakao.maps.Marker({
                     position : markerPosition,
                 });
+                marker.setMap(map);
             });
         };
-
         mapScript.addEventListener("load", onLoadKakaoMap);
 
         return() => mapScript.removeEventListener("load",onLoadKakaoMap);
     },[latitude,longitude]);
 
     return(
-        <div>
-            <div id={"map"} >
-                map
-            </div>
-
-        </div>
+        <Map id={"map"} />
     );
 }
 

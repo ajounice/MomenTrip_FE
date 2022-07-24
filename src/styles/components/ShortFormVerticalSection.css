@@ -1,21 +1,24 @@
 .verticalSection{
     width : 15%;
-    height : 30%;
+    height : 200px;
 
     margin-right : 10px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: flex-end;
 
-    position : absolute;
-    bottom : 40px;
+    position : fixed;
+    /*bottom : 10%;*/
+    bottom : calc(env(safe-area-inset-bottom) + 80px);
     right : 1px;
 }
 
 .sectionItem{
-    width : 35px;
-    height : 35px;
+    margin : 10px 0 10px 0;
+
+    width : 30px;
+    height : 30px;
     box-sizing: border-box;
 }

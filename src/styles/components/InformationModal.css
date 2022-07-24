@@ -5,7 +5,10 @@
     border-top: 1px solid black;
     background-color: white;
     position : absolute;
-    bottom : 0;
+    /*bottom : 67.36453202%;*/
+    top : 32.75862068976%;
+    /*top : 15%;*/
+    /*max-height: 67.36453202%;*/
 
     display: flex;
     flex-direction: column;
@@ -93,6 +96,7 @@
 }
 
 .divLineTop{
+
     position: absolute;
     width: 85.7142857143%;
     height: 0;
@@ -103,6 +107,7 @@
 }
 
 .constrainShortFormContainer{
+
     width: 100%;
     height : 27.970749543%;
 
@@ -116,6 +121,7 @@
 }
 
 .constrainShortFormInnerContainer{
+
     width: 85.7142857143%;
     height : 100%;
 
@@ -153,4 +159,14 @@
 
     top : 1.2%;
     left : 5.2%;
+}
+
+.mapContainer {
+    width: 89.9470899471%;
+    height: 340px;
+    padding: 0;
+    margin: 0;
+
+    background-color: pink;
+
 }

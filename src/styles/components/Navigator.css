@@ -1,11 +1,11 @@
 .NavSection{
     width : 100%;
-    height : 8%;
+    height: calc(env(safe-area-inset-bottom) + 60px);
 
-    position : absolute;
+    position : fixed;
     top : 0;
 
-    background-color: skyblue;
+    background-color: pink;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

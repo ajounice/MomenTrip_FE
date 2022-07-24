@@ -1,7 +1,9 @@
 import React, {Dispatch, SetStateAction, useCallback, useEffect} from "react";
 import '../../styles/components/InformationModal.css';
 import {RiCloseFill, RiBookmarkLine, RiBookmarkFill} from "react-icons/ri";
-import MapComponent from "@/components/MapComponent";
+import MapComponent from "@/components/info/MapComponent";
+import * as config from "../../config";
+
 
 interface Props{
     isSelectedInfo : boolean;
@@ -71,7 +73,9 @@ function InformationModal({isSelectedInfo,setIsSelectedInfo,isCollected,setIsCol
 
             <div className={"divLineBottom"}></div>
 
-            <MapComponent latitude={33.450701} longitude={126.570667} />
+            <div className={"mapContainer"}>
+                {/*<MapComponent latitude={33.450701} longitude={126.570667} />*/}
+            </div>
 
         </div>
     );
