@@ -1,0 +1,48 @@
+.NavSection{
+    width : 100%;
+    height: calc(env(safe-area-inset-bottom) + 60px);
+
+    position : fixed;
+    top : 0;
+
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavTabContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavTabContainer h2{
+    font-weight: 400;
+    font-size : 18px;
+    padding-right :10px;
+    padding-left : 10px;
+}
+
+.home{
+    color : white;
+    font-weight: 400;
+}
+
+.search, .following {
+    color : black;
+    font-weight: 400;
+}
+
+.tmp{
+    padding : 3%;
+    width:1px;
+    height : 1px;
+}
+
+.alarmContainer{
+    box-sizing :content-box;
+    padding : 3%;
+}

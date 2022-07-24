@@ -1,7 +1,7 @@
 import React from 'react';
-import SearchBar from './components/SearchBar';
-import TagList from './components/TagList';
-import ThumbnailList from './components/ThumbnailList';
+import SearchBar from '../components/SearchBar';
+import TagList from '../components/TagList';
+import ThumbnailList from '../components/ThumbnailList';
 
 const dummy_data = [
     {

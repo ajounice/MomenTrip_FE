@@ -1,0 +1,12 @@
+.container{
+    width : 100vw;
+    height : calc(100vh - 8%);
+
+    position: absolute;
+    top : 8%;
+}
+
+
+.modal{
+    bottom : 0;
+}

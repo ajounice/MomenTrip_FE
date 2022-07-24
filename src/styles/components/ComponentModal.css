@@ -1,0 +1,71 @@
+.modalContainer{
+    width : 100%;
+    height : 67.36453202%;
+    border-top: 1px solid black;
+    background-color: white;
+    position : absolute;
+    bottom : 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.commentTitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left :10px;
+
+    border-bottom: solid gray 1px;
+}
+
+.commentTitleItem{
+    padding : 10px;
+}
+
+.userAddCommentContainer{
+    width : 100%;
+    height : 79px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-bottom: solid 1px gray;
+}
+
+.closeButton{
+    position : absolute;
+    right : 5px;
+    width : 1.5rem;
+    height : 1.5rem;
+}
+
+.sendButton{
+    position : absolute;
+    right : 2%;
+
+    width : 1.5rem;
+    height : 1.5rem
+}
+
+.profileImage{
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius : 50px;
+    object-fit: fill;
+
+    /*position: absolute;*/
+    /*left : 20px;*/
+}
+
+.commentInput{
+    width : 90%;
+    height : 50%;
+
+    border : none;
+    color : black;
+}
