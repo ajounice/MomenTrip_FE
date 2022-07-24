@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import "@/styles/pages/Home.css";
-import ShortFormVerticalSection from "@/components/common/ShortFormVerticalSection";
-import CommentModal from "@/components/comment/CommentModal";
-import ShareModal from "@/components/share/ShareModal";
-import InformationModal from "@/components/info/InformationModal";
+import ShortFormVerticalSection from "../components/common/ShortFormVerticalSection";
+import CommentModal from "../components/comment/CommentModal";
+import ShareModal from "../components/share/ShareModal";
+import InformationModal from "../components/info/InformationModal";
 
 function Home() {
     const [ isSelectComment , setIsSelectComment ] = useState<boolean>(false);

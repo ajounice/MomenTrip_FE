@@ -1,9 +1,7 @@
 import React, {Dispatch, SetStateAction, useCallback, useEffect} from "react";
 import '../../styles/components/InformationModal.css';
 import {RiCloseFill, RiBookmarkLine, RiBookmarkFill} from "react-icons/ri";
-import MapComponent from "@/components/info/MapComponent";
 import * as config from "../../config";
-
 
 interface Props{
     isSelectedInfo : boolean;
